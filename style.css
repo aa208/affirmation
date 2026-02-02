@@ -4,7 +4,7 @@ body {
   background: transparent;
 }
 
-/* Fixed widget size */
+/* Fixed-size Notion widget */
 .widget {
   width: 320px;
   height: 180px;
@@ -20,20 +20,21 @@ body {
   justify-content: center;
   text-align: center;
 
-  font-family: "Playfair Display", serif;
+  /* Elegant built-in font */
+  font-family: "Georgia", "Times New Roman", serif;
   color: #ffffff;
 
-  /* Galaxy gradient */
+  /* Galaxy / night-sky background */
   background: radial-gradient(
-      circle at top left,
-      #4b6cb7,
-      #182848 60%
+    circle at top left,
+    #4b6cb7,
+    #182848 60%
   );
 
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
 
-/* Subtle stars overlay */
+/* Subtle stars */
 .widget::before {
   content: "";
   position: absolute;
@@ -48,13 +49,16 @@ body {
   pointer-events: none;
 }
 
+/* Affirmation text styling */
 #affirmation {
   position: relative;
   z-index: 1;
 
   font-size: 18px;
-  line-height: 1.45;
-  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  font-style: italic;
 
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
+
